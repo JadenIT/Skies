@@ -56,7 +56,7 @@ module.exports = LoginController
 ## Middlewares
 server.use(Path, Function)
 ```javascript
-const server = require('skies')
+const server = require('skies').server
 const LoginController = require('./LoginController')
 const cors = require('./cors')
 
