@@ -1,8 +1,6 @@
 const server = require('./lib/Server')
 const LoginController = require('./LoginController')
 
-server.run()
+server.run().listen(3000)
 
 new LoginController('/login')
-
-server.listen(3000)

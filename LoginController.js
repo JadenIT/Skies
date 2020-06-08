@@ -7,13 +7,11 @@ class LoginController extends Controller {
     }
 
     get(req, res) {
-        res.write('get')
-        res.end()
+        res.send({ car: 1 })
     }
 
     post(req, res) {
-        res.write('post')
-        res.end()
+        res.send({ car: 1 })
     }
 
 }
