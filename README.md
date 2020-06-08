@@ -43,10 +43,10 @@ class LoginController extends Controller {
         super(route)
     }
     get(req, res) {
-        res.send({ car: 1 })
+        res.send('This is get')
     }
     post(req, res) {
-        res.send({ car: 1 })
+        res.send({ data: 'This is post, sent by json' })
     }
 }
 
