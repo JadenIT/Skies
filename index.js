@@ -1,10 +1,11 @@
 const server = require('./lib/Server')
+
 const LoginController = require('./controllers/LoginController')
 
-server.listen(3000)
+const cors = require('./middlewares/cors')
 
-server.use('/login', function (req, res) {
-    return true
-})
+server.use('/', cors);
 
 new LoginController('/login')
+
+server.listen(3000)
