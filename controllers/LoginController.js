@@ -1,4 +1,4 @@
-const Controller = require('./lib/Controller')
+const Controller = require('../lib/Controller')
 
 class LoginController extends Controller {
 
