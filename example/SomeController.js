@@ -1,6 +1,6 @@
-const Controller = require('../lib/Controller')
+const Controller = require('skies').Controller
 
-class LoginController extends Controller {
+class SomeController extends Controller {
 
     constructor(route) {
         super(route)
@@ -16,4 +16,4 @@ class LoginController extends Controller {
 
 }
 
-module.exports = LoginController
+module.exports = SomeController
