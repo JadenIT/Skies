@@ -82,7 +82,7 @@ function cors(req, res) {
 module.exports = cors  
 ```
 
-## Req properties and methods
+## Documentation
 ```javascript
 /* Returns all params */
 req['POST'] 
