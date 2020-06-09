@@ -82,6 +82,18 @@ function cors(req, res) {
 module.exports = cors  
 ```
 
+## How to get POST and GET params
+```javascript
+/* Returns all params */
+req['POST'] 
+req['GET'] 
+
+/* Returns name param */
+req['POST']['name'] 
+req['GET']['name]' 
+```
+
+
 ## Author
 
 👤 **Vladislav Kruglikov**
