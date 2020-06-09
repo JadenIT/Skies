@@ -98,7 +98,7 @@ res.send({hi: "there!})
 
 /* Sends response */
 res.send('Hi there!')
-res.send({hi: "there!})
+res.send({hi: "there!"})
 
 /* Returns cookies */
 req['cookies']
