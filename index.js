@@ -2,7 +2,6 @@ const server = require('./lib/Server')
 const Controller = require('./lib/Controller')
 
 module.exports = {
-    Controller
+    Controller,
+    server
 }
-
-exports.default = server
