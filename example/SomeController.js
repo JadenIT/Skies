@@ -1,4 +1,4 @@
-const Controller = require('skies').Controller
+const Controller = require('../lib/Controller')
 
 class SomeController extends Controller {
 
@@ -7,11 +7,13 @@ class SomeController extends Controller {
     }
 
     get(req, res) {
-        res.send({ car: 1 })
+        /* req['GET'] */
+        res.send('get')
     }
 
     post(req, res) {
-        res.send({ car: 1 })
+        /* req['POST'] */
+        res.send('post')
     }
 
 }
