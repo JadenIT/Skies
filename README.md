@@ -43,9 +43,11 @@ class LoginController extends Controller {
         super(route)
     }
     get(req, res) {
+       /* This mehtod will process GET request */
         res.send('This is get')
     }
     post(req, res) {
+       /* This mehtod will process POST request */
         res.send({ data: 'This is post, sent by json' })
     }
 }
@@ -55,20 +57,8 @@ module.exports = LoginController
 
 ## Middlewares
 server.use(Path, Function)
-```javascript
-const server = require('skies').server
-const LoginController = require('./LoginController')
-const cors = require('./cors')
-
-server.use('/', cors);
-
-new LoginController('/login')
-
-server.listen(3000)
-```
-
-### cors.js
-Here it's a bit differ from express, the next() is 'return true', so if you don't return true, or don't return anything, it means that here it will stop
+If middleware returns true, it means it calls other middlware, until it gets to the main function, otherwise
+if you don't return anything or return false, it will stop, so you cant send some error message or something
 ```javascript
 function cors(req, res) {
     res.writeHead(200, {
@@ -79,7 +69,7 @@ function cors(req, res) {
     return true
 }
 
-module.exports = cors  
+server.use('/', cors);
 ```
 
 ## Documentation
