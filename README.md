@@ -82,7 +82,7 @@ function cors(req, res) {
 module.exports = cors  
 ```
 
-## How to get POST and GET params
+## Req properties and methods
 ```javascript
 /* Returns all params */
 req['POST'] 
@@ -91,6 +91,23 @@ req['GET']
 /* Returns name param */
 req['POST']['name'] 
 req['GET']['name]' 
+
+/* Sends response */
+res.send('Hi there!')
+res.send({hi: "there!})
+
+/* Sends response */
+res.send('Hi there!')
+res.send({hi: "there!})
+
+/* Returns cookies */
+req['cookies']
+
+/* Creates cookies */
+res.setCookie(key, value, options)
+options = {
+  maxAge: maxAge
+}
 ```
 
 
