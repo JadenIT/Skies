@@ -94,10 +94,6 @@ req['GET']['name]'
 
 /* Sends response */
 res.send('Hi there!')
-res.send({hi: "there!})
-
-/* Sends response */
-res.send('Hi there!')
 res.send({hi: "there!"})
 
 /* Returns cookies */
